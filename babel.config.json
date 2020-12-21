@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "@babel/preset-typescript",
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": " > 2%"
+      }
+    ]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": " > 2%"
+          }
+        ]
+      ],
+      "plugins": [
+        "react-refresh/babel"
+      ]
+    }
+  }
+}
